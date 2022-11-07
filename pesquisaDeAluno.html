@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Loucademia</title>
+		<link rel="stylesheet" type="text/css" href="css/loucademia_estilo.css">
+	</head>
+	<body>
+		<header>
+			<img src="images/logotipo.png">
+			<nav>
+				<div>
+					<a href="novoAluno.html"> Novo Aluno</a><br>
+					<a href="pesquisaDeAluno.html"> Pesquisa de Aluno</a><br>
+					<a href="controleDeAcesso.html"> Controle de Acesso</a><br>
+					<a href="relatóriosDeEntradaSaida.html"> Relatório de Entradas e Saídas</a><br>
+					<a href="relatoriosDeSituacao"> Relatório de Situações</a><br>
+				</div>
+			</nav>
+		</header>
+		<!--  Fim do Cabeçalho -->
+		
+		<h1>Pesquisa de Aluno</h1>
+		<div id="infoMessage">
+			(Aqui vai eventual mensagem de sistema confirmando sucesso ou erro)
+		</div>
+		
+		<form>
+			<fieldset>
+				<legend>Parâmetros da Pesquisa</legend>
+				
+				<label for="nomenome_pesquisa_aluno">Nome</label>
+				<input type="text" name="nome" id="nome_pesquisa_aluno"><br>
+								
+				<label for="id_pesquisa_aluno">ID</label>
+				<input type="text" name="id_pesquisa_aluno" id="id_pesquisa_aluno">
+				
+				<label for="rg_pesquisa_aluno">RG</label>
+				<input type="text" name="rg" id="rg_pesquisa_aluno">
+				
+				<label for="telefoneFixoDDD_pesquisa_aluno">Telefone</label>
+				<input type="tel" name="telefoneFixoDDD_pesquisa_aluno" id="telefoneFixoDDD_pesquisa_aluno">	
+				<input type="tel" name="telefoneFixoNumero_pesquisa_aluno" id="telefoneFixoNumero_pesquisa_aluno">				
+			</fieldset><br>
+			
+			<input type="submit" value="Pesquisar">
+		</form>
+		
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>Nome</th>
+				<th>RG</th>
+				<th>E-mail</th>
+				<th>Situação</th>
+				<th>Ações</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>André</td>
+				<td>11.111.111-1</td>
+				<td>andre@loucademia.com.br</td>
+				<td>Ativo</td>
+				<td>
+					<input type="button" value="Editar">
+					<input type="button" value="Excluir">
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Carlos</td>
+				<td>22.222.222-2</td>
+				<td>carlos@loucademia.com.br</td>
+				<td>Inativo</td>
+				<td>
+					<input type="button" value="Editar">
+					<input type="button" value="Excluir">
+				</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Amanda</td>
+				<td>33.333.333-3</td>
+				<td>amanda@loucademia.com.br</td>
+				<td>Com Pendência</td>
+				<td>
+					<input type="button" value="Editar">
+					<input type="button" value="Excluir">
+				</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Giovana</td>
+				<td>44.444.444-4</td>
+			 	<td>giovana@loucademia.com.br</td>
+				<td>Ativo</td>
+				<td>
+					<input type="button" value="Editar">
+					<input type="button" value="Excluir">
+				</td>
+			</tr>
+		</table>
+			
+					
+		<!-- Início Rodapé -->
+	</body>
+</html>	
+		<!-- Fim Rodapé -->
