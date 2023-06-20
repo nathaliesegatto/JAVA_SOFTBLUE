@@ -35,6 +35,8 @@ h1
 	padding-left: 8px;
 	box-shadow: 0.1em 0.1em 0.2em gray;
 	text-transform: uppercase;
+	width: 1535px;
+	margin-left: 4px;
 }
 
 div#infoMessage
@@ -47,8 +49,10 @@ div#infoMessage
 	border-right: 5px solid red;
 	border-top: 5px solid red;
 	border-bottom: 5px solid red;
-	padding: 4px;
+	padding: 4 px;
 	border-radius: 20px;
+	width: 1540px;
+	margin-left: 5px;
 }
 
 fieldset
