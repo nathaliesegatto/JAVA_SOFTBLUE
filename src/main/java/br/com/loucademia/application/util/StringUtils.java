@@ -7,7 +7,7 @@ public class StringUtils {
 			return true;
 		}
 		
-		return s.trim().length() == 0;  // corta os espaços em branco do início e do final
+		return s.trim().length() == 0;  // corta os espaços em branco do início e do final e verifica se o tamanhho que sobra é zero (string vazia)
 	}
 
 	public static String leftZeroes(int value, int finalSize) { // concatena zeros à esquerda para número de matrícula com 8 caracteres
