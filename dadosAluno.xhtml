@@ -1,48 +1,34 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE html>
+
+<!-- Mantenho a tag html apenas para não ver erros de estruturação, mas o jsf vai ignorar tudo que estiver fora da tag "ui:composition" -->
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:f="http://xmlns.jcp.org/jsf/core"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	xmlns:jsf="http://xmlns.jcp.org/jsf/jsf" lang="pt-br">
 
-	<head>
-		<meta charset="ISO-8859-1" />
-		<title>Loucademia</title>
-		<link rel="stylesheet" type="text/css" href="css/loucademia_estilo.css" />
-	</head>
-	<body>
-		<header>
-			<img src="images/logotipo.png" alt="Logotipo" />
-			<nav>
-				<div>
-					<a href="novoAluno.html">Novo Aluno</a><br />
-					<a href="pesquisaDeAluno.html">Pesquisa de Aluno</a><br />
-					<a href="controleDeAcesso.html">Controle de Acesso</a><br />
-					<a href="relatóriosDeEntradaSaida.html">Relatório de Entradas e Saídas</a><br />
-					<a href="relatoriosDeSituacao">Relatório de Situações</a><br />
-				</div>
-			</nav>
-		</header>
-		<!-- Fim do Cabeçalho -->
+
+<ui:composition template="layout.xhtml">
+	<!--  Preenche todo o cabeçalho e topo de acordo com o que está definido no arquivo layout.xhtml -->
+	<ui:define name="conteudo">
+		<!--  Define que aqui começa o conteudo, conforme especificado no arquivo layout.xhtml -->
 
 		<h1>Novo Aluno</h1>
-		<div id="infoMessage">(Aqui vai eventual mensagem de sistema confirmando sucesso ou erro)</div>
+		<div id="infoMessage">(Aqui vai eventual mensagem de sistema
+			confirmando sucesso ou erro)</div>
 
 		<form>
 			<fieldset>
 				<legend>Dados Pessoais</legend>
-				<label for="nome">Nome</label>
-				<input type="text" name="nome" id="nome" /><br />
-				<label for="sexo">Sexo</label>
-				<select name="sexo" id="sexo">
+				<label for="nome">Nome</label> <input type="text" name="nome"
+					id="nome" /><br /> <label for="sexo">Sexo</label> <select
+					name="sexo" id="sexo">
 					<option>Masculino</option>
 					<option>Feminino</option>
-				</select>
-				<label for="rg">RG</label>
-				<input type="text" name="rg" id="rg" />
-				<label for="nascimento">Data de Nascimento</label>
-				<input type="date" name="nascimento" id="nascimento" /><br />
+				</select> <label for="rg">RG</label> <input type="text" name="rg" id="rg" />
+				<label for="nascimento">Data de Nascimento</label> <input
+					type="date" name="nascimento" id="nascimento" /><br />
 			</fieldset>
 
 			<fieldset>
@@ -52,44 +38,40 @@
 					<option>Inativo</option>
 					<option>Com Pendência</option>
 				</select>
-			</fieldset><br />
+			</fieldset>
+			<br />
 
 
 			<fieldset>
 				<legend>Endereço</legend>
-				<label for="rua">Rua</label>
-				<input type="text" name="rua" id="rua" /><br />
-				<label for="numero">Número</label>
-				<input type="text" name="numero" id="numero" />
-				<label for="complemento">Complemento</label>
-				<input type="text" name="complemento" id="complemento" /><br />
-				<label for="cidade">Cidade</label>
-				<input type="text" name="cidade" id="cidade" />
-				<label for="estado">Estado</label>
-				<select name="estado" id="estado">
+				<label for="rua">Rua</label> <input type="text" name="rua" id="rua" /><br />
+				<label for="numero">Número</label> <input type="text" name="numero"
+					id="numero" /> <label for="complemento">Complemento</label> <input
+					type="text" name="complemento" id="complemento" /><br /> <label
+					for="cidade">Cidade</label> <input type="text" name="cidade"
+					id="cidade" /> <label for="estado">Estado</label> <select
+					name="estado" id="estado">
 					<option>(LISTA_ESTADOS)</option>
-				</select>
-				<label for="cep">CEP</label>
-				<input type="text" name="cep" id="cep" /><br />
-			</fieldset><br />
+				</select> <label for="cep">CEP</label> <input type="text" name="cep" id="cep" /><br />
+			</fieldset>
+			<br />
 
 
 			<fieldset>
 				<legend>Contato</legend>
-				<label for="email">E-mail</label>
-				<input type="email" name="email" id="email" /><br />
-				<label for="telefoneCelularDDD">Telefone Celular</label>
-				<input type="tel" name="telefoneCelularDDD" id="telefoneCelularDDD" />
-				<input type="tel" name="telefoneCelularNumero" id="telefoneCelularNumero" />
-				<label for="telefoneFixoDDD">Telefone Fixo</label>
-				<input type="tel" name="telefoneFixoDDD" id="telefoneFixoDDD" />
-				<input type="tel" name="telefoneFixoNumero" id="telefoneFixoNumero" />
-			</fieldset><br />
-
-			<input type="submit" value="Salvar" />
-			<input type="button" value="Relatório de Acessos" />
+				<label for="email">E-mail</label> <input type="email" name="email"
+					id="email" /><br /> <label for="telefoneCelularDDD">Telefone
+					Celular</label> <input type="tel" name="telefoneCelularDDD"
+					id="telefoneCelularDDD" /> <input type="tel"
+					name="telefoneCelularNumero" id="telefoneCelularNumero" /> <label
+					for="telefoneFixoDDD">Telefone Fixo</label> <input type="tel"
+					name="telefoneFixoDDD" id="telefoneFixoDDD" /> <input type="tel"
+					name="telefoneFixoNumero" id="telefoneFixoNumero" />
+			</fieldset>
+			<br /> <input type="submit" value="Salvar" /> <input type="button"
+				value="Relatório de Acessos" />
 
 		</form>
-
-	</body>
+	</ui:define>
+</ui:composition>
 </html>
