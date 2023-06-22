@@ -7,7 +7,6 @@ import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -16,6 +15,11 @@ import javax.persistence.Table;
 @Table(name = "ALUNO")
 public class Aluno implements Serializable {
 	
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	
 	public enum Sexo {
 		Masculino, Feminino;
