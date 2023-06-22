@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Loucademia</title>
+		<link rel="stylesheet" type="text/css" href="css/loucademia_estilo.css">
+	</head>
+	<body>
+		<header>
+			<img src="images/logotipo.png">
+			<nav>
+				<div>
+					<a href="novoAluno.html"> Novo Aluno</a><br>
+					<a href="pesquisaDeAluno.html"> Pesquisa de Aluno</a><br>
+					<a href="controleDeAcesso.html"> Controle de Acesso</a><br>
+					<a href="relatóriosDeEntradaSaida.html"> Relatório de Entradas e Saídas</a><br>
+					<a href="relatoriosDeSituacao"> Relatório de Situações</a><br>
+				</div>
+			</nav>
+		</header>
+		<!--  Fim do Cabeçalho -->
+		
+		<h1>Relatório De Situações</h1>
+		<div id="infoMessage">
+			(Aqui vai eventual mensagem de sistema confirmando sucesso ou erro)
+		</div>
+		
+		<form>
+			<fieldset>
+				<legend>Situação</legend>
+				
+				<select name="situacao" id="situacao">
+					<option>Ativo</option>
+					<option>Inativo</option>
+					<option>Com Pendência</option>
+				</select>			
+			</fieldset><br>
+			
+			<input type="submit" value="Gerar">
+		</form>
+		
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>Nome</th>
+				<th>Situação</th>
+				<th>Celular</th>
+				<th>Fixo</th>
+				<th>Ações</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>André</td>
+				<td>Ativo</td>
+				<td>11977565877</td>
+				<td>1141687654</td>
+				<td>
+					<input type="button" value="Editar">
+				</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>Vanessa</td>
+				<td>Com Pendência</td>
+				<td>11962738492</td>
+				<td>1141601010</td>
+				<td>
+					<input type="button" value="Editar">
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Carlos</td>
+				<td>Ativo</td>
+				<td>11978665677</td>
+				<td>1141687284</td>
+				<td>
+					<input type="button" value="Editar">
+				</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>Priscila</td>
+				<td>Inativo</td>
+				<td>11999876539</td>
+				<td>1141665432</td>
+				<td>
+					<input type="button" value="Editar">
+				</td>
+			</tr>
+		</table>
+		
+					
+		<!-- Início Rodapé -->
+	</body>
+</html>	
+		<!-- Fim Rodapé -->
